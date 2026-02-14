@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Valentine?</title>
+  <title>Valentine!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
@@ -80,9 +80,11 @@
 
     .result {
       display: none;
-      font-size: 2.2rem;
-      margin-top: 30px;
+      font-size: clamp(22px, 5px, 4px);
+      max-width: 90%;
+      margin-top: auto;
       animation: fadeIn 1s ease forwards;
+      pedding: 15px;
     }
 
     @keyframes fadeIn {
@@ -188,6 +190,7 @@ document.body.addEventListener("click", playMusic, { once: true });
 document.body.addEventListener("touchstart", playMusic, { once: true });
 
     // Runaway button
+    yesBtn.addEventListener("click", () => {
     function moveButton() {
       const areaRect = buttonArea.getBoundingClientRect();
       const btnRect = noBtn.getBoundingClientRect();
@@ -256,4 +259,5 @@ document.body.addEventListener("touchstart", playMusic, { once: true });
   </script>
 </body>
 </html>
+
 
