@@ -5,6 +5,7 @@
   <title>Valentine?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    
     body {
       margin: 0;
       height: 60vh;
@@ -132,7 +133,16 @@
       0% { transform: translateY(0) scale(1); opacity: 1; }
       100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
     }
-
+    .love-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  animation: pulse 2s infinite;
   </style>
 </head>
 <body>
@@ -148,11 +158,14 @@
     </h1>
 
     <div class="buttons" id="buttonArea">
+      
       <button id="yesBtn">Yes ❤️</button>
       <button id="noBtn">I'll think about it 😏</button>
     </div>
 
     <div class="result" id="result">
+      <img src="thato.jpg" alt="Thato" class="love-pic">
+      
       I know sometimes I irritate you, sometimes I hurt you and sometimes 
       I overreact. But that's all because I love you so much Thato.
        From the moment you walked in my life, everything changed. You became my peace, my joy and my home.
